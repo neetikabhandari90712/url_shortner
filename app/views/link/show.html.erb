@@ -1,0 +1,7 @@
+<h1>Here is your short link!</h1>
+<p><%= @link.original_url.each do |url| %>
+  <ul>
+    <li><%= url.original_url %> - <%= url.slug %> - <%= url.clicked %></li>
+  </ul>
+<% end %> </p>
+<!--<p> <%#= @short_url %></p>-->
